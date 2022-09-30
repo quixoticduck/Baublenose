@@ -1,0 +1,208 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #32598b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* svg { */
+#reindeer {
+  width: 100vw;
+  max-height: 100vh;
+  /*   width: 600px; */
+}
+
+#reindeer {
+  /*   opacity: 0; */
+  /*   animation: MoveUpDown 6s linear infinite; */
+  animation: RightToLeft 10s linear infinite;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+@keyframes MoveUpDown {
+  0% {
+  }
+
+  50% {
+    bottom: -150px;
+  }
+
+  100% {
+  }
+}
+
+@keyframes RightToLeft {
+  0% {
+    left: 1000px;
+    bottom: 25px;
+  }
+
+  50% {
+    bottom: -50px;
+  }
+
+  65% {
+    bottom: 10px;
+  }
+
+  85% {
+    bottom: -60px;
+  }
+
+  100% {
+    left: -1000px;
+    bottom: -60px;
+  }
+}
+
+#nosey {
+  animation: FlashNose 2s linear infinite;
+}
+
+@keyframes FlashNose {
+  50% {
+    fill: purple;
+    /*     opacity: 0; */
+  }
+  100% {
+    /*     opacity: 1; */
+  }
+}
+
+#nosey:hover {
+  cursor: pointer;
+  fill: orange;
+  animation-play-state: paused;
+}
+
+#left-arm-midpoint,
+#left-arm-after,
+#right-arm-midpoint,
+#right-arm-before {
+  opacity: 0;
+}
+
+#left-brow,
+#right-brow {
+  animation: BrowsMove 10s linear infinite;
+}
+
+@keyframes BrowsMove {
+  0% {
+    transform: rotateZ(0.2deg);
+  }
+
+  45% {
+    transform: rotateZ(0.2deg);
+  }
+
+  47% {
+    transform: rotateZ(-0.4deg);
+  }
+
+  49% {
+    transform: rotateZ(0.2deg);
+  }
+
+  100% {
+    transform: rotateZ(0.2deg);
+  }
+}
+
+/* #right-antler, */
+#left-ear,
+#left-ear-inner {
+  transform-origin: 80% 80%;
+  animation: LeftEarMoves 5s linear infinite;
+}
+
+@keyframes LeftEarMoves {
+  0% {
+    transform: rotate(0.2deg);
+  }
+
+  50% {
+    transform: rotate(-0.65deg);
+  }
+
+  100% {
+    transform: rotate(0.2deg);
+  }
+}
+
+/* #left-antler, */
+#right-ear,
+#right-ear-inner {
+  transform-origin: 20% 80%;
+  animation: RightEarMoves 5s linear infinite;
+}
+
+@keyframes RightEarMoves {
+  0% {
+  }
+
+  50% {
+    transform: rotate(0.85deg);
+  }
+
+  100% {
+  }
+}
+
+#left-antler,
+#right-antler {
+  animation: AntlersMove 5s linear infinite;
+}
+
+@keyframes AntlersMove {
+  0% {
+  }
+  50% {
+    transform: rotateZ(0.7deg);
+  }
+  100% {
+  }
+}
+
+/* 
+#tail {
+  transform-origin: 20% 40%;
+  animation: TailMoves 2s linear infinite;
+} */
+
+/* @keyframes TailMoves {
+  0% {
+  }
+
+  50% {
+    transform: skewY(3deg);
+  }
+
+  100% {
+  }
+}
+ */
+
+#star-A {
+  /*     width: 100vw;
+  max-height: 100vh; */
+  /*  position: absolute; */
+  /*
+  left: 50px;
+  bottom: 50px; */
+  transform: scale(0.05);
+  animation: StarTwinkle 2s linear infinite;
+  z-index: -2;
+}
+
+@keyframes StarTwinkle {
+  50% {
+    opacity: 30%;
+  }
+}
