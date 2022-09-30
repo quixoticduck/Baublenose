@@ -1,64 +1,29 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #32598b;
+  background-color: #1a1a26;
+  /*   background-color: transparent; */
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  /*   min-height: 100vh; */
 }
 
 /* svg { */
 #reindeer {
-  width: 100vw;
+  width: 98vw;
   max-height: 100vh;
   /*   width: 600px; */
 }
 
 #reindeer {
   /*   opacity: 0; */
-  /*   animation: MoveUpDown 6s linear infinite; */
-  animation: RightToLeft 10s linear infinite;
+  /* animation: MoveUpDown 6s linear infinite;
+  /*   animation: RightToLeft 10s linear infinite; */
   position: absolute;
   left: 0;
-  bottom: 0;
+  top: 0;
   z-index: 2;
-}
-
-@keyframes MoveUpDown {
-  0% {
-  }
-
-  50% {
-    bottom: -150px;
-  }
-
-  100% {
-  }
-}
-
-@keyframes RightToLeft {
-  0% {
-    left: 1000px;
-    bottom: 25px;
-  }
-
-  50% {
-    bottom: -50px;
-  }
-
-  65% {
-    bottom: 10px;
-  }
-
-  85% {
-    bottom: -60px;
-  }
-
-  100% {
-    left: -1000px;
-    bottom: -60px;
-  }
 }
 
 #nosey {
@@ -77,8 +42,8 @@ body {
 
 #nosey:hover {
   cursor: pointer;
-  fill: orange;
   animation-play-state: paused;
+  fill: orange !important;
 }
 
 #left-arm-midpoint,
@@ -189,20 +154,60 @@ body {
 }
  */
 
-#star-A {
-  /*     width: 100vw;
-  max-height: 100vh; */
-  /*  position: absolute; */
-  /*
-  left: 50px;
-  bottom: 50px; */
-  transform: scale(0.05);
-  animation: StarTwinkle 2s linear infinite;
-  z-index: -2;
+/*
+@keyframes MoveUpDown {
+  0% {
+  }
+
+  50% {
+    top: 150px;
+  }
+
+  100% {
+  }
 }
 
-@keyframes StarTwinkle {
+@keyframes RightToLeft {
+  0% {
+    left: 1000px;
+    bottom: 25px;
+  }
+
+  50% {
+    bottom: -50px;
+  }
+
+  65% {
+    bottom: 10px;
+  }
+
+  85% {
+    bottom: -60px;
+  }
+
+  100% {
+    left: -1000px;
+    bottom: -60px;
+  }
+}
+*/
+
+/*  
+#star-A {
+    width: 100vw;
+  max-height: 100vh; */
+/*  position: absolute; */
+/*
+  left: 50px;
+  bottom: 50px; */
+/*   transform: scale(0.05);
+  animation: StarTwinkle 2s linear infinite;
+  z-index: -2;
+} */
+
+/* @keyframes StarTwinkle {
   50% {
     opacity: 30%;
   }
 }
+ */

@@ -123,7 +123,7 @@ tl.addLabel("positionOne")
       morphSVG: {
         shape: "#left-leg-pos2",
         type: "rotational",
-        origin: "70% 5%"
+        origin: "25% 5%"
       }
     },
     "positionOne"
@@ -138,7 +138,7 @@ tl.addLabel("positionOne")
       morphSVG: {
         shape: "#left-leg-pos3",
         type: "rotational",
-        origin: "25% 5%",
+        origin: "70% 5%",
         map: "position",
         shapeIndex: 4
       }
@@ -185,7 +185,7 @@ tl.addLabel("positionOne")
       morphSVG: {
         shape: "#right-leg-pos2",
         type: "rotational",
-        origin: "70% 5%"
+        origin: "70% -10%"
       }
     },
     "positionOne"
@@ -200,7 +200,7 @@ tl.addLabel("positionOne")
       morphSVG: {
         shape: "#right-leg-pos3",
         type: "rotational",
-        origin: "25% 5%",
+        origin: "25% -10%",
         map: "position",
         shapeIndex: 4
       }
@@ -215,7 +215,7 @@ tl.addLabel("positionOne")
       morphSVG: {
         shape: "#right-leg-pos2",
         type: "rotational",
-        origin: "70% 5%"
+        origin: "25% -10%"
       }
     },
     "positionThree"
@@ -230,7 +230,7 @@ tl.addLabel("positionOne")
       morphSVG: {
         shape: "#right-leg-pos1",
         type: "rotational",
-        origin: "25% 5%",
+        origin: "70% -10%",
         map: "position",
         shapeIndex: 4
       }
@@ -240,16 +240,16 @@ tl.addLabel("positionOne")
 
 //NOISE
 var clickNose;
-audio = document.createElement("audio");
+var honk = document.createElement("audio");
 
-// audio.preload= "auto";
-// audio.type = "audio/wav";
-audio.loop = false;
-audio.src =
+honk.preload = "auto";
+honk.type = "audio/wav";
+honk.loop = false;
+honk.src =
   "https://www.dropbox.com/s/v3nih2rytlxln8w/horn_stickinthemud.wav?dl=1";
 
 nosey.onclick = function () {
-  audio.play();
+  honk.play();
 };
 
 //WINKING ON NOSE HOVER
@@ -270,6 +270,7 @@ $(function () {
 });
 
 //places the svg in the right place and adds the class of reindeer so it doesn't change every time I reimport the svg code???
-shape = document.getElementsByTagName("svg")[0];
-// shape.setAttribute("viewBox", "-400 -200 4000 4000");
-shape.setAttribute("id", "reindeer");
+var shape = document.getElementsByTagName("svg")[0];
+//shape.setAttribute("viewBox", "-400 -200 4000 3200");
+//shape.setAttribute("id", "reindeer");
+shape.style.display = "block";

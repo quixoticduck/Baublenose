@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="1.5" clip-rule="evenodd" viewBox="0 0 2834 2834">
+<svg xmlns="http://www.w3.org/2000/svg" filter="url(#pink-glow)" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="1.5" clip-rule="evenodd" viewBox="-190 -60 3200 3100" style="display:none" id="reindeer">
+  <!--   Display is none above so that the reindeer does not load until the JavaScript is all loaded, otherwise it will pop up as a different size to begin with -->
   <g id="reindeer">
     <g id="body">
       <path id="tail" fill="#935f3b" d="M2066.96,1438.45c17.314,-4.312 44.992,-12.063 44.992,-12.063c0,0 22.3,-6.117 38.993,-5.999c11.902,0.084 23.204,2.329 26.996,5.999c-0,0 15.666,6.35 14.997,23.996c-0.387,10.199 -17.854,20.726 -22.276,23.996c-9.998,7.394 -19.638,9.173 -34.714,11.998c-7.81,1.463 -38.28,3.13 -50.991,5.999c-15.417,3.48 -22.185,10.571 -30.406,11.998c-10.444,1.813 -28.77,-6.851 -36.7,-13.81c-3.774,-3.313 -25.38,-25.96 -10.881,-32.384c24.651,-10.921 46.198,-16.296 59.99,-19.73Z" />
@@ -74,10 +75,10 @@
         <feMergeNode in="blurred"></feMergeNode>
         <feMergeNode in="SourceGraphic"></feMergeNode>
       </feMerge>
-    </filter>
- -->
+    </filter> -->
+
     <!-- The only difference in this filter is its "flood-color" -->
-    <!--     <filter id="pink-glow" x="-5000%" y="-5000%" width="10000%" height="10000%">
+    <filter id="pink-glow" x="-100%" y="-100%" width="200%" height="200%">
       <feFlood result="flood" flood-color="#F7CDCD" flood-opacity="1"></feFlood>
       <feComposite in="flood" result="mask" in2="SourceGraphic" operator="in"></feComposite>
       <feMorphology in="mask" result="dilated" operator="dilate" radius="2"></feMorphology>
@@ -86,44 +87,10 @@
         <feMergeNode in="blurred"></feMergeNode>
         <feMergeNode in="SourceGraphic"></feMergeNode>
       </feMerge>
-    </filter> -->
+    </filter>
 
   </defs>
 
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 146 146">
-  <defs>
-    <g id="starry" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="1.5" clip-rule="evenodd">
-      <path id="star-A" fill="url(#_Linear1)" stroke="url(#_Linear2)" stroke-width="8.69" d="M123.156,75.606c0,-0 -45.048,-13.44 -36.213,46.485c0,-0 -8.167,-54.152 -62.929,-23.254c-9.706,5.476 37.665,-22.175 6.917,-55.862c-9.028,-9.89 37.627,33.795 53.51,-25.54c1.598,-5.974 -10.077,24.26 5.885,43.52c6.117,7.38 16.293,13.149 32.83,14.651Z" />
-      <defs>
-        <linearGradient id="_Linear1" x1="0" x2="1" y1="0" y2="0" gradientTransform="matrix(67.812 70.343 -73.4903 70.8461 33.841 37.568)" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stop-color="#fbbc23" />
-          <stop offset="1" stop-color="#f28e7b" />
-        </linearGradient>
-        <linearGradient id="_Linear2" x1="0" x2="1" y1="0" y2="0" gradientTransform="matrix(67.812 70.343 -73.4903 70.8461 33.841 37.568)" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stop-color="#ffce00" />
-          <stop offset="1" stop-color="#f28d7c" />
-        </linearGradient>
-      </defs>
-
-      <defs>
-        <!-- We set the filter effect area to be really big to guarantee we see it all... -->
-        <!-- The only difference in this filter is its "flood-color" -->
-        <!--         <filter id="pink-glow" x="-5000%" y="-5000%" width="10000%" height="10000%">
-          <feFlood result="flood" flood-color="#F7CDCD" flood-opacity="1"></feFlood>
-          <feComposite in="flood" result="mask" in2="SourceGraphic" operator="in"></feComposite>
-          <feMorphology in="mask" result="dilated" operator="dilate" radius="2"></feMorphology>
-          <feGaussianBlur in="dilated" result="blurred" stdDeviation="5"></feGaussianBlur>
-          <feMerge>
-            <feMergeNode in="blurred"></feMergeNode>
-            <feMergeNode in="SourceGraphic"></feMergeNode>
-          </feMerge>
-        </filter>
-      </defs>
- -->
-        <use xlink:href="#Star-A" x="-121" y="112" />
-        <use xlink:href="#starry" x="100" y="-124" />
 </svg>
 
 <!--    when recopying in the reindeer code each time, add       filter="url(#pink-glow)"      to the svg as the star has, comment out the closing svg tag as it is closed off below and change the viewBox to -500 -200 (so from 0 0 to ("viewBox", "-500 -200 AND THEN KEEP THESE DIMENSIONS THE SAME");) -->
