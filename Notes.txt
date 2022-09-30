@@ -1,5 +1,6 @@
 To do:
-
+Make it so either the wink/honk noise does not sound when on mobile? maybe swap between?
+Set volume property in javascript so the honk is not so loud https://stackoverflow.com/questions/33747398/html-audio-tag-volume
 
 Issues:
 hover audio only works after one click
