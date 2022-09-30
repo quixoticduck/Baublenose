@@ -257,7 +257,7 @@ var honk = createAudio(
 );
 
 var chime = createAudio(
-  "https://www.dropbox.com/s/v3nih2rytlxln8w/horn_stickinthemud.wav?dl=1"
+  "https://www.dropbox.com/s/5etgvfbff5cadqs/wink_MLaudio_short.mp3?dl=1"
 );
 
 nosey.onclick = function () {
