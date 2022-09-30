@@ -277,11 +277,11 @@ $(function () {
       $("#right-wink-eye").css("stroke-opacity", "1");
     },
     function () {
-      // on mouseout wait a while then unwink
+      // on mouseout wait the tiniest moment then unwink
       setTimeout(function () {
         $("#right-eye").css({ opacity: 1 });
         $("#right-wink-eye").css("stroke-opacity", "0");
-      }, 300);
+      }, 28);
     }
   );
 });

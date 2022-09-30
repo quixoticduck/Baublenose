@@ -1,6 +1,5 @@
 To do:
-Add ding noise when winking
-Change wink so it is only for when mouseisover
+
 
 Issues:
 hover audio only works after one click
@@ -11,3 +10,7 @@ to make calendar days grid work on mobile use newish terms:
 css aspect ratio
 grid gap css
 font size scale viewport width units 5 (%)
+
+Done:
+Add ding noise when winking
+Change wink so it is only for when mouseisover
