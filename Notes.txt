@@ -4,4 +4,10 @@ Change wink so it is only for when mouseisover
 
 Issues:
 hover audio only works after one click
-nose remains orange on smartphones because the last clicked place is still seen as hovering. Try using Element: touchend event to fix
+nose remains orange on smartphones because the last clicked place is still seen as hovering. Try using Element: touchend event to fix - https://developer.mozilla.org/en-US/docs/Web/API/Element/touchend_event
+
+for main calendar website:
+to make calendar days grid work on mobile use newish terms:
+css aspect ratio
+grid gap css
+font size scale viewport width units 5 (%)
