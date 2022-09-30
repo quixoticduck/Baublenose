@@ -154,7 +154,7 @@ body {
 }
  */
 
-/*
+/* 
 @keyframes MoveUpDown {
   0% {
   }
@@ -165,8 +165,9 @@ body {
 
   100% {
   }
-}
+} */
 
+/*
 @keyframes RightToLeft {
   0% {
     left: 1000px;
