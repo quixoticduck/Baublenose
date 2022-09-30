@@ -240,22 +240,39 @@ tl.addLabel("positionOne")
 
 //NOISE
 var clickNose;
-var honk = document.createElement("audio");
 
-honk.preload = "auto";
-honk.type = "audio/wav";
-honk.loop = false;
-honk.src =
-  "https://www.dropbox.com/s/v3nih2rytlxln8w/horn_stickinthemud.wav?dl=1";
+function createAudio(audioURL) {
+  //creates an html tag called audio which could be any string but in this case it needs to be called audio so the browser knows it is playing a sound
+  var soundTag = document.createElement("audio");
+  soundTag.preload = "auto";
+  soundTag.type = "audio/wav";
+  soundTag.loop = false;
+  soundTag.src = audioURL;
+  return soundTag;
+}
+
+//creates an html tag called audio which could be any string but in this case it needs to be called audio so the browser knows it is playing a sound
+var honk = createAudio(
+  "https://www.dropbox.com/s/v3nih2rytlxln8w/horn_stickinthemud.wav?dl=1"
+);
+
+var chime = createAudio(
+  "https://www.dropbox.com/s/v3nih2rytlxln8w/horn_stickinthemud.wav?dl=1"
+);
 
 nosey.onclick = function () {
   honk.play();
+};
+
+nosey.onmouseover = function () {
+  chime.play();
 };
 
 //WINKING ON NOSE HOVER
 $(function () {
   $("#nosey").hover(
     function () {
+      chime.play();
       $("#right-eye").css({ opacity: 0 });
       $("#right-wink-eye").css("stroke-opacity", "1");
     },
